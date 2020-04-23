@@ -1,0 +1,8 @@
+url:              ''
+permalink:        'pretty'
+exclude:          [Gemfile*, Rakefile, vendor, spec, README.md]
+theme:            minima
+baseurl:          '/mirador-static'
+webrick:
+  headers:
+    'Access-Control-Allow-Origin': '*'

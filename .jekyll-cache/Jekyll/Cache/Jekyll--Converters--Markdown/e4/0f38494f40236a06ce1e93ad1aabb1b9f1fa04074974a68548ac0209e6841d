@@ -1,0 +1,38 @@
+I"·<link rel="stylesheet" type="text/css" href="http://localhost:4000/mirador-static/mirador/css/mirador-combined.css" />
+
+<style>
+  .mirador {
+    display: block;
+    background-color: $neutral-light;
+    position: relative;
+    height: 450px;
+    width: 100%;
+    max-height: 80vh;
+    margin-top: $super-margin;
+    margin-bottom: $super-margin;
+    a {
+      color: inherit !important;
+    }
+    li {
+      font-size: 1em !important;
+    }
+  }
+</style>
+
+<script src="http://localhost:4000/mirador-static/mirador/mirador.js"></script>
+
+<div id="mirador-iiif-viewer" class="iiif-viewer mirador" allowfullscreen="allowfullscreen"></div>
+<script>
+  Mirador({
+    id: 'mirador-iiif-viewer',
+    data: [
+      { "manifestUri": 'https://iiif.harvardartmuseums.org/manifests/object/299843' }
+    ],
+    windowObjects: [{
+      loadedManifest: 'https://iiif.harvardartmuseums.org/manifests/object/299843',
+      viewType: "ScrollView"
+    }]
+  });
+</script>
+
+:ET
